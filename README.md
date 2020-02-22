@@ -1,3 +1,3 @@
 # WatirScripts
 
-Hi! Allow me to introduce [./ruby_smile.jpg](Ruby)
+Hi! Allow me to introduce [Ruby](./ruby_smile.jpg)
