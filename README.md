@@ -7,7 +7,9 @@ These scripts are written in Ruby to perform the following tasks:
   2. Log into LinkedIn
   3. Search for someone with whom you are not connected*
   4. Select their profile
-  5. Compose a message containing a link to this repo and an invite to set up an appointment to talk about feedback/ideas re: this project
+  5. Compose a message containing a link to this repo and an invite to set up an appointment to talk about feedback/ideas re: this project and programming in general
+  
+  *<sub><sup>This project only works for sending messages to people with whom you are not already connected. Maybe next I'll write a script that messages existing connections :thinking::thinking::thinking:</sub></sup> 
 
 ## The Tests
 
