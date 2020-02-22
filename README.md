@@ -32,7 +32,7 @@ Thanks for taking the time to look, and feel free to use my script to add me on 
 
 
 ---
-### _**Bonus**_
+### :sparkles:_**Bonus**_:sparkles:
 Here's a picture of my dog, who happens to be named Ruby :diamonds: :gem: :dog:
 
 <img src="ruby_smile_sm.png" alt="Ruby the Pup" width="200"/>
