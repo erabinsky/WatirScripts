@@ -29,5 +29,5 @@ Thanks for taking the time to look, and feel free to use my script to add me on 
 ### _**Bonus**_
 Here's a picture of my dog, who happens to be named Ruby :diamonds: :gem: :dog:
 
-![Ruby the Pup](./ruby_smile_sm.png)
+![Ruby the Pup](./ruby_smile_sm.png=500x)
 
