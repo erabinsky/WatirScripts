@@ -25,7 +25,7 @@ This test uses the 'csv' gem to iterate over a list of names to search for each 
 
 ---
 
-Thanks for taking the time to look, and feel free to use my script to find me on LinkedIn :)
+Thanks for taking the time to look, and feel free to use my script to find me on LinkedIn. These are the first scripts I've ever written in Ruby, so I would love some feedback/suggestions! :)
 
 
 
