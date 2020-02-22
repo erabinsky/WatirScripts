@@ -13,13 +13,13 @@ These scripts are written in Ruby to perform the following tasks:
 
 ## The Tests
 
-### Test 1: Static (demo.rb)
+### Test 1: Static (`demo.rb`)
 This test completes all of the tasks above in order to reach out to Michael 'Fritz' Fritzius -\-who challenged me to write these scripts (Hi, Fritz!)-\- by hardcoding his name to the file.
 
-### Test 2: User Input (demo_user_input.rb)
+### Test 2: User Input (`demo_user_input.rb`)
 This test prompts the user for input to search for a specific person
 
-### Test 3: Contact List (demo_contact_list.rb)
+### Test 3: Contact List (`demo_contact_list.rb`)
 This test uses the 'csv' gem to iterate over a list of names to search for each name by only running the script once!
 
 
