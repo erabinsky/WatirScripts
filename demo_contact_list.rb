@@ -42,7 +42,7 @@ def sendMessage()
     end
     
     
-    # #Send
-    # browser.button(data_control_name: "send").click
+    #Send
+    browser.button(data_control_name: "send").click
 end
 sendMessage()
