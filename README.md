@@ -23,7 +23,7 @@ This test prompts the user for input to search for a specific person
 This test uses the 'csv' gem to iterate over a list of names to search for each name by only running the script once!
 ---
 
-Thanks for taking the time to look, and feel free to use my script to add me on LinkedIn :)
+Thanks for taking the time to look, and feel free to use my script to find me on LinkedIn :)
 
 
 
