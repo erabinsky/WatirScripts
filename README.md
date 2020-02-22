@@ -3,24 +3,24 @@
 ## Automation for Connection
 
 These scripts are written in Ruby to perform the following tasks:
-  1. Open the web browser
-  2. Log into LinkedIn
+  1. Open Google Chrome
+  2. Navigate to and log into LinkedIn
   3. Search for someone with whom you are not connected*
   4. Select their profile
-  5. Compose a message containing a link to this repo and an invite to set up an appointment to talk about feedback/ideas re: this project and programming in general
+  5. Compose and send a message containing a link to this repo and an invite to set up an appointment to talk about feedback/ideas re: this project and programming in general
   
-  *<sub><sup>This project only works for sending messages to people with whom you are not already connected. Maybe next I'll write a script that messages existing connections :thinking::thinking::thinking:</sub></sup> 
+  *<sub>This project only works for sending messages to people with whom you are not already connected. Maybe next I'll write a script that messages existing connections :thinking::thinking::thinking:</sub> 
 
 ## The Tests
 
-### Test 1: Static (demo.rb)
-This test completes all of the tasks above in order to reach out to Michael 'Fritz' Fritzius -\-who challenged me to write these scripts (Hi, Fritz!)-\- by hardcoding his name to the file.
+### Test 1: Static (`demo.rb`)
+This test completes all of the tasks above in order to reach out to Michael 'Fritz' Fritzius -\-who challenged me to write these scripts (Hi, Fritz!:wave::wave:)-\- with his name hardcoded in the script.
 
-### Test 2: User Input (demo_user_input.rb)
-This test prompts the user for input to search for a specific person
+### Test 2: User Input (`demo_user_input.rb`)
+This test prompts the user for input to search for a specific person of their choosing.
 
-### Test 3: Contact List (demo_contact_list.rb)
-This test uses the 'csv' gem to iterate over a list of names to search for each name by only running the script once!
+### Test 3: Contact List (`demo_contact_list.rb`)
+This test uses the 'csv' gem to iterate over a list of names to search for each person on the list by only running the script once!
 
 
 ---
