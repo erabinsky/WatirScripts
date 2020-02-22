@@ -24,3 +24,8 @@ This test uses the 'csv' gem to iterate over a list of names to search for each 
 ---
 
 Thanks for taking the time to look, and feel free to use my script to add me on LinkedIn :)
+
+
+###\*~*Bonus*~\*
+Here's a picture of my dog, who happens to be named Ruby :diamonds: :gem: :dog:
+
