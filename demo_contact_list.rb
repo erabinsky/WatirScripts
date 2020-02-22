@@ -14,7 +14,7 @@ def sendMessage()
     user_hash = JSON.parse(file)
     $username = user_hash["username"]
     $password = user_hash["password"]
-    table = CSV.parse(File.read("rubydemolinkedin.csv"), headers: true)
+    table = CSV.parse(File.read("/Users/ezrarabinsky/Code/LinkedIn/rubydemolinkedin.csv", headers: true))
 
 
     #Signing In
@@ -22,7 +22,7 @@ def sendMessage()
     $browser.text_field(name: "session_password").send_keys("#{$password}")
     $browser.button(aria_label: "i18n_sign-in").click
 
-    CSV.foreach('rubydemolinkedin.csv', headers: true) do |row|
+    CSV.foreach('../LinkedIn/rubydemolinkedin.csv', headers: true) do |row|
         
     
         #Search
