@@ -10,10 +10,13 @@ def sendMessage()
     puts "Who are you trying to connect with?(first name):"
     connect_first_name = gets.chomp!
 
+    puts "Middle name/initial? (if none, just hit enter)"
+    connect_middle_name = gets.chomp!
+
     puts "Last name?"
     connect_last_name = gets.chomp!
 
-    puts "If they have a nickname, please enter it-- otherwise, just hit enter!"
+    puts "One last thing! If they have a nickname, please enter it-- otherwise, just hit enter!"
     connect_nickname = gets.chomp
 
     $browser = Watir::Browser.new
@@ -31,7 +34,7 @@ def sendMessage()
     $browser.button(aria_label: "i18n_sign-in").click
 
     #Search
-    $browser.text_field(aria_label: "Search").send_keys("#{connect_first_name} #{connect_nickname} #{connect_last_name}")
+    $browser.text_field(aria_label: "Search").send_keys("#{connect_first_name} #{ connect_middle_name === "" ? connect_nickname : connect_middle_name } #{connect_last_name}") 
     $browser.button(data_control_name: "nav.search_button").click
 
     #Select First Search Result
