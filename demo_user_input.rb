@@ -10,14 +10,15 @@ def sendMessage()
     puts "Who are you trying to connect with?(first name):"
     connect_first_name = gets.chomp!
 
-    puts "If they have a nickname, please enter it-- otherwise, just hit enter!"
+    puts "If they have a nickname (NOT a middle name), please enter it-- otherwise, just hit enter!"
     connect_nickname = gets.chomp
 
-    puts "Last name?"
+    puts "If they have a middle name/initial (NOT a nickname), please enter it-- otherwise, just hit enter!"
+    connect_middle_name = gets.chomp!
+
+    puts "Last thing (I promise!!): What's their last name?"
     connect_last_name = gets.chomp!
 
-    puts "One last thing! Please enter a middle name/initial (if applicable)-- otherwise, just hit enter!"
-    connect_middle_name = gets.chomp!
 
     browser = Watir::Browser.new
     browser.goto('linkedin.com')
@@ -47,7 +48,7 @@ def sendMessage()
     browser.div(class: "msg-form__contenteditable", index: 0).send_keys("Hi, #{connect_nickname === "" ? connect_first_name : connect_nickname }! If you're reading this, odds are my script worked! Here's a link to the repo: https://github.com/erabinsky/WatirScripts\n\nI'd love to hear your feedback as well as maybe collaborate on some future projects together. Hit me up on Calendly and let's find a time to catch up!\n(https://calendly.com/ezra-rabinsky/code-challenge-follow-up)")
 
     
-    gets
+
     # Send
     # browser.button(data_control_name: "send").click
 end

@@ -35,7 +35,7 @@ def sendMessage()
     browser.div(class: "msg-form__contenteditable", index: 0).send_keys("Hi, Fritz! If you're reading this, odds are my script worked! Here's a link to the repo: https://github.com/erabinsky/WatirScripts\n\nI'd love to hear your feedback as well as maybe collaborate on some future projects together. Hit me up on Calendly and let's find a time to catch up!\n(https://calendly.com/ezra-rabinsky/code-challenge-follow-up)")
 
     
-    gets
+
     #Send
     #browser.button(data_control_name: "send").click
 end
