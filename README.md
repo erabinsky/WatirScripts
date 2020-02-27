@@ -5,11 +5,11 @@
 These scripts are written in Ruby to perform the following tasks:
   1. Open Google Chrome
   2. Navigate to and log into LinkedIn
-  3. Search for someone with whom you are not connected*
+  3. Search for someone with whom you are connected*
   4. Select their profile
   5. Compose and send a message containing a link to this repo and an invite to set up an appointment to talk about feedback/ideas re: this project and programming in general
   
-  *<sub>This project only works for sending messages to people with whom you are not already connected. Maybe next I'll write a script that messages existing connections :thinking::thinking::thinking:</sub> 
+  *<sub>This project only works for sending messages to people with whom you are already connected. Maybe next I'll write a script that can send both "regular" messages and inmail :thinking::thinking::thinking:</sub> 
 
 ## The Tests
 
