@@ -44,7 +44,7 @@ def sendMessage()
     #Write Subject and Message Body
 
     browser.div(aria_label: "Write a message…").send_keys("Hi, #{nickname === "" ? first_name : nickname}! I'm glad we were able to connect. If you're reading this, odds are my script worked! Here's a link to the repo: https://github.com/erabinsky/WatirScripts\n\nI'd love to hear your feedback as well as maybe collaborate on some future projects together. Hit me up on Calendly and let's find a time to catch up!\n(https://calendly.com/ezra-rabinsky/code-challenge-follow-up)") 
-gets
+
     
 
     # Send
