@@ -7,21 +7,6 @@ require 'json'
 
 def sendMessage()
 
-
-#Version 1
-    # puts "Who are you trying to connect with?(first name):"
-    # connect_first_name = gets.chomp!
-
-    # puts "If they have a nickname (NOT a middle name), please enter it-- otherwise, just hit enter!"
-    # connect_nickname = gets.chomp
-
-    # puts "If they have a middle name/initial (NOT a nickname), please enter it-- otherwise, just hit enter!"
-    # connect_middle_name = gets.chomp!
-
-    # puts "Last thing (I promise!!): What's their last name?"
-    # connect_last_name = gets.chomp!
-
-#Try this
     puts "Please type in the full name of the person who you are looking to message:"
     full_name = gets.chomp!
 
