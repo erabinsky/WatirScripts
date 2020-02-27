@@ -7,13 +7,15 @@ require 'json'
 
 def sendMessage()
 
-    puts "Please type in the full name of the person who you are looking to message:"
+    puts "Please type in the full name of the person who you are looking to message, then press ENTER:"
     full_name = gets.chomp!
 
-    puts "\n\nDoes this person have a nickname that they go by? If yes, please enter it here.\nOtherwise, just hit enter!"
+    puts "\n\nWould you like to address this person by a name other than their first (e.g. nickname. formal address)? If yes, please type it here then press ENTER\nOtherwise, just hit ENTER!"
     nickname = gets.chomp!
 
-    first_name = full_name.match(/[\w]+\b/)
+
+    # Single or Hyphenated First Names
+    first_name = full_name.match(/([\w](\-\w+)?)+\b/)
 
 
     browser = Watir::Browser.new
@@ -37,11 +39,11 @@ def sendMessage()
     #Select First Search Result
     browser.a(class: "search-result__result-link", index: 0).click
     #Open New Message
-    browser.a(class: "message-anywhere-button", index: 0).click
+    browser.button(class: "pv-s-profile-actions--message", index: 0).click
 
     #Write Subject and Message Body
-    browser.text_field(name: "subject").send_keys("Coding Challenge A C C E P T E D")
-    browser.div(class: "msg-form__contenteditable", index: 0).send_keys("Hi, #{nickname === "" ? first_name : nickname}! If you're reading this, odds are my script worked! Here's a link to the repo: https://github.com/erabinsky/WatirScripts\n\nI'd love to hear your feedback as well as maybe collaborate on some future projects together. Hit me up on Calendly and let's find a time to catch up!\n(https://calendly.com/ezra-rabinsky/code-challenge-follow-up)")
+
+        browser.div(aria_label: "Write a message…").send_keys("Hi, #{nickname === "" ? first_name : nickname}! I'm glad we were able to connect. If you're reading this, odds are my script worked! Here's a link to the repo: https://github.com/erabinsky/WatirScripts\n\nI'd love to hear your feedback as well as maybe collaborate on some future projects together. Hit me up on Calendly and let's find a time to catch up!\n(https://calendly.com/ezra-rabinsky/code-challenge-follow-up)") 
     gets
     
 
