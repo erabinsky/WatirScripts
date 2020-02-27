@@ -38,11 +38,13 @@ def sendMessage()
         #Write Subject and Message Body
         
         browser.div(aria_label: "Write a message…").send_keys("Hi, #{row[3] === nil ? row[1] : row[3] }! If you're reading this, odds are my script worked! Here's a link to the repo: https://github.com/erabinsky/WatirScripts\n\nI'd love to hear your feedback as well as maybe collaborate on some future projects together. Hit me up on Calendly and let's find a time to catch up!\n(https://calendly.com/ezra-rabinsky/code-challenge-follow-up)")
-        browser.button(data_control_name: "overlay.close_conversation_window").click
-
-
+        
+        
         #Send
         # browser.button(data_control_name: "send").click
+
+        browser.button(data_control_name: "overlay.close_conversation_window").click
+
     end
     
     
