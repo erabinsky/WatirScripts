@@ -35,7 +35,7 @@ def sendMessage()
 
     
     #Send
-    # browser.button(data_control_name: "send").click
+    browser.button(data_control_name: "send").click
 
 end
 sendMessage()
