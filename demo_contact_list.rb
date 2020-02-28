@@ -41,7 +41,7 @@ def sendMessage()
         
         
         #Send
-        # browser.button(data_control_name: "send").click
+        browser.button(data_control_name: "send").click
 
         browser.button(data_control_name: "overlay.close_conversation_window").click
 
