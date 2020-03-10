@@ -39,7 +39,7 @@ def sendMessage()
     #Select First Search Result
     browser.a(class: "search-result__result-link", index: 0).click
     #Open New Message
-    browser.button(class: "pv-s-profile-actions--message", index: 0).click
+    browser.a(class: "pv-s-profile-actions--message", index: 0).click
 
     #Write Subject and Message Body
 
